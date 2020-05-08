@@ -25,7 +25,7 @@ public class FloatSign extends InstanceFactory
 		super("Single-Precision Sign Changer");
 
 		setOffsetBounds(Bounds.create(-40, -20, 40, 40));
-		setIconName("adder.gif");
+		setIconName("negator.gif");
 		
 		// Set port attributes
 		Port[] ports = new Port[3];

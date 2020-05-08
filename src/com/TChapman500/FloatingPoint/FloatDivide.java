@@ -24,7 +24,7 @@ public class FloatDivide extends InstanceFactory {
 		
 		// Set component appearance
 		setOffsetBounds(Bounds.create(-40, -20, 40, 40));
-		setIconName("multiplier.gif");
+		setIconName("divider.gif");
 		
 		// Set port attributes
 		Port[] ports = new Port[3];
