@@ -1,5 +1,5 @@
 # Floating Point Library for Logisim
-A Logisim JAR library that adds floating point arithmetic to the simulator.  This library is compatible with both the original version of Logisim as well as Logisim Evolution (Holy Cross Edition).  This library contains components for Single-Precision Floating Point arithmetic, but will later be expanded to include Double-Precision Floating Point arithmetic.
+A Logisim JAR library that adds floating point arithmetic to the simulator.  This library is compatible with both the original version of Logisim as well as [Logisim Evolution (Holy Cross Edition)](https://github.com/kevinawalsh/logisim-evolution).  This library contains components for Single-Precision Floating Point arithmetic, but will later be expanded to include Double-Precision Floating Point arithmetic.
 
 # Basic Components
 ## Adder/Subtractor
