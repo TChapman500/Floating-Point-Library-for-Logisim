@@ -17,7 +17,8 @@ public class FloatingPoint extends Library
 	
 	public FloatingPoint()
 	{
-		Tools = Arrays.asList(new AddTool[]
+		Tools = Arrays.asList(
+			new AddTool[]
 			{
 				// Arithmatic Operations
 				new AddTool(new FloatAdd()),		// Adds or Subtracts two numbers
@@ -62,6 +63,5 @@ public class FloatingPoint extends Library
 	public static final AttributeOption QUADRUPLE = new AttributeOption("quadruple", S.getter("Quadruple"));
 	
 	public static final Attribute<AttributeOption> PRECISION = Attributes.forOption("precision", S.getter("Precision"),
-		new AttributeOption[]
-		{ SINGLE, DOUBLE /*, EXTENDED, QUADRUPLE */ });
+		new AttributeOption[] { SINGLE, DOUBLE /*, EXTENDED, QUADRUPLE */ });
 }

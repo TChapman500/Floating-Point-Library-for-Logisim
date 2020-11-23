@@ -123,7 +123,11 @@ public class FloatSign extends InstanceFactory
 				float sumFloat;
 				
 				// Adds by default, but subtracts if sub value is fully-defined.
-				if (mode.isFullyDefined() && mode == Value.TRUE) sumFloat = Math.abs(aFloat);
+				if (mode.isFullyDefined() && mode == Value.TRUE)
+				{
+					if (aFloat < 0.0) sumFloat = -aFloat;
+					else sumFloat = aFloat;
+				}
 				else sumFloat = -aFloat;
 				
 				// Result of the operation
@@ -147,7 +151,11 @@ public class FloatSign extends InstanceFactory
 				double sumDouble;
 
 				// Adds by default, but subtracts if sub value is fully-defined.
-				if (mode.isFullyDefined() && mode == Value.TRUE) sumDouble = Math.abs(aDouble);
+				if (mode.isFullyDefined() && mode == Value.TRUE)
+				{
+					if (aDouble < 0.0) sumDouble = -aDouble;
+					else sumDouble = aDouble;
+				}
 				else sumDouble = -aDouble;
 				
 				long sumLong = Double.doubleToLongBits(sumDouble);

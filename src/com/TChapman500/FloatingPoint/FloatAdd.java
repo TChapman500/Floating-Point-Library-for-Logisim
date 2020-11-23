@@ -212,5 +212,4 @@ public class FloatAdd extends InstanceFactory
 			state.setPort(PORT_OUT1, sum1, 24);
 		}
 	}
-
 }

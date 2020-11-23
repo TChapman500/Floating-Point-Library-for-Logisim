@@ -17,7 +17,8 @@ import com.cburch.logisim.instance.InstanceState;
 import com.cburch.logisim.instance.Port;
 import com.cburch.logisim.util.GraphicsUtil;
 
-public class FloatDivide extends InstanceFactory {
+public class FloatDivide extends InstanceFactory
+{
 
 	private static final int PORT_A_IN0 = 0;
 	private static final int PORT_B_IN0 = 1;
@@ -26,7 +27,8 @@ public class FloatDivide extends InstanceFactory {
 	private static final int PORT_B_IN1 = 4;
 	private static final int PORT_OUT1 = 5;
 	
-	public FloatDivide() {
+	public FloatDivide()
+	{
 		super("FP Divider");
 		setAttributes(
 			new Attribute[] { FloatingPoint.PRECISION },
@@ -36,7 +38,8 @@ public class FloatDivide extends InstanceFactory {
 	}
 
 	@Override
-	public void paintInstance(InstancePainter painter) {
+	public void paintInstance(InstancePainter painter)
+	{
 		// TODO Auto-generated method stub
 
 		Graphics g = painter.getGraphics();
